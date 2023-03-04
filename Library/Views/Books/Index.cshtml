@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<BookModel>
 
-@if (User.IsInRole("Admin"))
+@*@if (User.IsInRole("Admin"))
 {
 	@Html.ActionLink("Create New Book", "Create", "Books")
 
-}
+}*@
 
 @{
 	string title = "Books";
@@ -101,6 +101,9 @@
 	}
 		</tbody>
 </table>
+
+
+
 @section Scripts{
 	<link href="~/lib/datatables/css/jquery.datatables.min.css" rel="stylesheet" />
 	<script src="~/lib/datatables/js/jquery.datatables.min.js"></script>

@@ -49,7 +49,6 @@ namespace Business.Services.Report
                             StockAmount = p.StockAmount + " pieces ",
                             WriterName = s.Name,
 
-
                             CategoryId = c.Id,
                             WriterId = s.Id
                         };
