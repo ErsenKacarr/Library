@@ -1,4 +1,12 @@
 ﻿<div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Welcome to Library.</p>
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <p>Welcome to @AppSettings.Title @User.Identity.Name.</p>
+    }
+    else
+    {
+        <p>Welcome to @AppSettings.Title.</p>
+    }
 </div>
